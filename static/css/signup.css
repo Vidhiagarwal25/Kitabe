@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif; /* Use Arial font family */
+    background-color:hsl(20, 43%, 93%); /* Set window background color to a shade of pink */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    width: 90%; /* Set width to 90% of the viewport */
+    max-width: 600px; /* Set maximum width */
+    height: 80vh; /* Set height to 80% of the viewport height */
+    padding: 40px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 80%); /* Light shade background for the container */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added box-shadow for pop-out effect */
+    margin: auto; /* Center the container vertically and horizontally */
+    overflow-y: auto; /* Add vertical scroll if content exceeds container height */
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: hsl(203, 30%, 26%); /* Dark pinkish-brown font color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: calc(100% - 24px); /* Adjusted width to accommodate padding and border */
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #e4a5bf; /* Light pinkish-brown border */
+    background-color: #fff; /* Light shade background for input fields */
+    color: hsl(203, 30%, 26%); /* Dark pinkish-brown font color */
+    font-family: Arial, sans-serif; /* Use Arial font family */
+    font-size: 16px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #ff91ad; /* Light pinkish-brown border color on focus */
+}
+
+button {
+    width: 100%; /* Set width to 100% */
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff91ad; /* Light pinkish-orange button color */
+    color: #fff; /* White font color */
+    font-family: Arial, sans-serif; /* Use Arial font family */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e7518d; /* Dark pinkish-orange button color on hover */
+}
+
+.social-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-login p {
+    margin-bottom: 15px;
+    color: hsl(203, 30%, 26%); /* Dark pinkish-brown font color */
+}
+
+.social-button {
+    display: inline-block;
+    width: 120px; /* Set width of the button */
+    height: 50px; /* Set height of the button */
+    border-radius: 5px; /* Make the button slightly rounded */
+    border: none;
+    background-color: #fff; /* Light shade background for the button */
+    margin: 0 10px; /* Adjust spacing between buttons */
+    cursor: pointer;
+}
+
+.social-button img {
+    width: auto; /* Adjust the size of the icon */
+    height: 100%; /* Maintain aspect ratio */
+    margin: auto; /* Center the icon vertically and horizontally */
+}
+
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+    color: hsl(203, 30%, 26%); /* Dark pinkish-brown font color */
+}
+
+.login-link a {
+    color: hsl(203, 30%, 26%); /* Dark pinkish-brown link color */
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
