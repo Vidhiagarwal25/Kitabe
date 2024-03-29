@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>KITABEE- Stories Unfold with Aesthetic Grace</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload image
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">KITABE</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{{ url_for("index") }}" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{{ url_for("about") }}" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{{ url_for("bookshelves") }}" class="navbar-link" data-nav-link>BookShelves</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{{ url_for("account") }}" class="navbar-link" data-nav-link>Account</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+    <!--help section starts here-->
+    <section class=" section faq" id="faq" aria-label="faq">
+        <div class="faq-content">
+            <h2>FAQ</h2>
+            <!-- FAQ content will be dynamically populated by JavaScript -->
+        </div>
+    </section>
+
+    <!--help section ends here-->
+      <!--Contact starts here-->
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h2 section-title has-underline">
+            Write me anything
+            <span class="span has-before"></span>
+          </h2>
+
+          <div class="wrapper">
+
+            <form action="" class="contact-form">
+
+              <input type="text" name="name" placeholder="Your Name" required class="input-field">
+
+              <input type="email" name="email_address" placeholder="Your Email" required class="input-field">
+
+              <input type="text" name="subject" placeholder="Subject" required class="input-field">
+
+              <textarea name="message" placeholder="Your Message" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-primary">Send Now</button>
+
+            </form>
+
+            <ul class="contact-card">
+
+              <li>
+                <p class="card-title">Address:</p>
+
+                <address class="address">
+                  BHILWARA <br>
+                  RAJASTHAN (311001)
+                </address>
+              </li>
+
+              <li>
+                <p class="card-title">Phone:</p>
+
+                <a href="tel:7878777070" class="card-link">7878777700</a>
+              </li>
+
+              <li>
+                <p class="card-title">Email:</p>
+
+                <a href="mailto:help_kitabe@gmail.com" class="card-link">help_kitabe@gmail.com</a>
+              </li>
+
+              <li>
+                <p class="social-list-title h3">Connect book socials</p>
+
+                <ul class="social-list">
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+      <!--Contact ends here-->
+
+    </article>
+  </main>
+
+
+
+
+
+  <!--Footer starts here -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <a href="#" class="logo">Kitabe</a>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="{{ url_for("about") }}" class="footer-link">About us</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for("terms") }}" class="footer-link">Terms</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for("privacy") }}" class="footer-link">Privacy</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for("help") }}" class="footer-link">Help</a>
+          </li>
+
+          <li>
+            <a href="#Contact" class="footer-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 All right reserved. Made with ❤ by vidhi.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+  <!--Footer ends here -->
+
+
+
+
+
+  <!--custom script link -->
+  <script src="{{url_for('static', filename='js/help.js')}}" ></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

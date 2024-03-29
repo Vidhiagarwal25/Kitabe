@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TERMS & CONDITIONS</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload image
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">KITABE</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{{ url_for("index") }}" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{{ url_for("about") }}" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{{ url_for("bookshelves") }}" class="navbar-link" data-nav-link>BookShelves</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{{ url_for("account") }}" class="navbar-link" data-nav-link>Account</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!--PRIVACY START HERE-->
+      <section class="section privacy" id="privacy" aria-label="privacy">
+        <div class="terms">
+            <h1>PRIVACY POLICY</h1>
+            <h3>Last updated: March 24, 2024</h3>
+            <p>
+                Kitabe (together with its affiliates, “Kitabe,” “we,” or “us”) understands the importance of safeguarding your privacy and is committed to protecting your personal information in accordance with this Privacy Policy. <br><br>Kitabe is operated under the umbrella of our parent company, Bookiverse Inc. (“Bookiverse”). The information collected on Kitabe is subject to the Bookiverse Privacy Policy, except as otherwise stated herein. By accessing or using the Kitabe website and its related services (the “Service”), you consent to the practices described in the Bookiverse Privacy Policy as supplemented by this Privacy Policy. Please note that if you have an account on www.bookiverse.com, any information collected by Kitabe may be associated with your personal information held by Bookiverse, and may be utilized by Kitabe and Bookiverse to enhance the services we provide.
+            </p>
+            <h3>User Content and Messages</h3>
+            <p>
+                The Service enables you to share User Content, as defined in our Terms of Use. Please be aware that any User Content you post will be accessible to the public via the Service. User Content encompasses various forms of content including reviews, comments, and visual materials. Should you choose to delete User Content, please note that copies may persist in cached and archived pages or in the possession of other users who have saved or copied your User Content. <br>Kitabe endeavors to maintain the privacy of messages exchanged between you and other Members through the Service. However, even if you delete messages from your Kitabe inbox or outbox, copies of such messages may remain accessible in cached and archived pages or if other users have retained them.
+            </p>
+            <h3>Email Communication</h3>
+            <p>
+                By providing Kitabe with your email address, you consent to receiving Service-related notifications, including those mandated by law, via email instead of postal mail. Additionally, we may utilize your email address to send you other types of messages, such as newsletters, updates to features, notifications of member-generated content, or special offers (“Other Messages”). If you prefer not to receive Other Messages, you can opt out by adjusting your email preferences in the account settings section of Kitabe.com after signing in with your personal password. Opting out may result in you not receiving email notifications regarding updates, enhancements, or promotional offers. Please note that you cannot opt out of receiving Service-related emails.
+            </p>
+            <h3>Privacy Settings</h3>
+            <p>Your name may be used when inviting others to join Kitabe or when adding another member to your friends list. If you prefer not to have your name shared in this manner, you should refrain from utilizing these services. You can manage, delete, and adjust your privacy settings for the information you provide at any time in the account settings section of Kitabe.com after signing in with your personal password.</p>
+            <h3>Your Control Over Your Information</h3>
+            <p>You have the ability to access or modify your information and preferences at any time in the account settings section of Kitabe.com once you have logged in with your personal password. For instance, you can dictate which actions, if any, will be displayed on your update feed, whether your email address will be visible, whether your last name will be displayed, and what types of email notifications you will receive from the Service. Moreover, where mandated by applicable law, you may have the right to request access to or deletion of your personal information. To exercise these rights, please visit here and navigate to the “Settings” tab or contact us directly. Should you choose not to provide personally identifiable information through Kitabe, please be aware that this may limit our ability to provide certain services to you.
+            </p>
+            <h3>Cookies and Similar Technologies</h3>
+            <p>In order to enhance our systems’ ability to recognize your browser or device and to provide and improve the Service, we employ cookies and other identifiers. For detailed information about cookies and their usage, please review our Cookies notice.
+            </p>
+
+
+        </div>
+        
+      </section>
+        
+      <!--TERMS END HERE-->
+
+      <!--Contact starts here-->
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h2 section-title has-underline">
+            Write me anything
+            <span class="span has-before"></span>
+          </h2>
+
+          <div class="wrapper">
+
+            <form action="" class="contact-form">
+
+              <input type="text" name="name" placeholder="Your Name" required class="input-field">
+
+              <input type="email" name="email_address" placeholder="Your Email" required class="input-field">
+
+              <input type="text" name="subject" placeholder="Subject" required class="input-field">
+
+              <textarea name="message" placeholder="Your Message" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-primary">Send Now</button>
+
+            </form>
+
+            <ul class="contact-card">
+
+              <li>
+                <p class="card-title">Address:</p>
+
+                <address class="address">
+                  BHILWARA <br>
+                  RAJASTHAN (311001)
+                </address>
+              </li>
+
+              <li>
+                <p class="card-title">Phone:</p>
+
+                <a href="tel:7878777070" class="card-link">7878777700</a>
+              </li>
+
+              <li>
+                <p class="card-title">Email:</p>
+
+                <a href="mailto:help_kitabe@gmail.com" class="card-link">help_kitabe@gmail.com</a>
+              </li>
+
+              <li>
+                <p class="social-list-title h3">Connect book socials</p>
+
+                <ul class="social-list">
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+      <!--Contact ends here-->
+
+    </article>
+  </main>
+
+
+
+
+
+  <!--Footer starts here -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <a href="#" class="logo">Kitabe</a>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="{{ url_for("about") }}" class="footer-link">About us</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for("terms") }}" class="footer-link">Terms</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for("privacy") }}" class="footer-link">Privacy</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for("help") }}" class="footer-link">Help</a>
+          </li>
+
+          <li>
+            <a href="#Contact" class="footer-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 All right reserved. Made with ❤ by vidhi.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+  <!--Footer ends here -->
+
+
+
+
+
+  <!--custom script link -->
+  <script src="{{url_for('static', filename='js/script.js')}}" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>            

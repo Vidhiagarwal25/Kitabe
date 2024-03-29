@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TERMS & CONDITIONS</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload image
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">KITABE</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{{ url_for("index") }}" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{{ url_for("about") }}" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{{ url_for("bookshelves") }}" class="navbar-link" data-nav-link>BookShelves</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{{ url_for("account") }}" class="navbar-link" data-nav-link>Account</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!--TERMS START HERE-->
+      <section class="section terms" id="terms" aria-label="terms">
+        <div class="terms">
+        <h1>TERMS OF USE</h1>
+        <p>This Agreement was last revised on 24 March 2024. </p>        
+        <p>
+            Welcome to Kitabe.com, the website and online service provided by [Your Company Name] (hereinafter referred to as "Kitabe," "we," or "us"). This page outlines the terms governing your use of our service. By accessing or utilizing the Kitabe services, website, and software provided through or in connection with the service ("Service"), you agree, on behalf of yourself and any individuals using this Service under your account, to be bound by this Terms of Use Agreement, the Kitabe Privacy Policy, and any other applicable rules, policies, and terms posted on the Kitabe.com website or provided with the Service (collectively referred to as this "Agreement"), regardless of whether you are a registered user of our Service.<br>
+           <br> We reserve the right to modify this Agreement at our discretion by posting the revised Agreement on the Kitabe.com website. Your continued use of the Service following any such changes indicates your acceptance of the revised Agreement. This Agreement applies to all visitors, users, and others who access the Service ("Users").
+        </p>        
+
+
+        <h2>Use of Our Service</h2>
+        <p>Kitabe provides a platform for users to explore, track, and discuss books within a community setting.
+
+            <br> <br>Registration is not mandatory to browse Kitabe. However, certain features, such as creating bookshelves, posting reviews, and engaging with other members, require registration and the creation of a "Member" account. Your account grants access to the services and functionalities offered by Kitabe.
+            
+            <br> <br>  You are solely responsible for maintaining the confidentiality of your account credentials and agree not to share them with others. Notify Kitabe immediately of any unauthorized access or security breaches.
+            
+            <br> <br> You can adjust your profile settings on the My Account page to manage your profile and communication preferences. By providing your email address, you consent to its use in accordance with our Privacy Policy.
+            
+            <br> <br> Subject to compliance with this Agreement and any applicable fees, users are granted a limited, non-commercial license to access and utilize the Service. Any unauthorized commercial use or exploitation of the Service is prohibited.
+            
+            <br> <br>  To protect users from spam, Kitabe reserves the right to limit the number of communications a user can send to others within a 24-hour period.
+            
+            <br> <br> Kitabe retains the right to terminate or suspend access to the Service without notice or liability if users violate this Agreement or for any other reason determined by Kitabe.
+            
+            <br> <br>The Service may experience interruptions or changes at Kitabe's discretion, for which Kitabe shall not be liable.
+            
+            <br> <br> Users are solely responsible for their interactions with other Kitabe users, and Kitabe disclaims liability for any such interactions.
+        </p>
+
+        <h3>User Content</h3>
+        <p>Users may post reviews, comments, and other content ("User Content") on the Service. Users are responsible for ensuring their User Content complies with legal and ethical standards, and Kitabe reserves the right to remove any User Content deemed inappropriate.
+
+            <br> <br>Kitabe is not responsible for User Content and disclaims liability for any damages resulting from its use.
+            
+            <br> <br>By posting User Content, users grant Kitabe the right to use, reproduce, and distribute the content.
+        </p>
+
+        <h3>Our Proprietary Rights</h3>
+        <p>Except for User Content, all materials and content on the Service are the exclusive property of Kitabe and its licensors. Unauthorized use of these materials is prohibited.
+
+            <br> <br>Users may submit comments or ideas about the Service, but Kitabe is under no obligation to compensate or acknowledge such submissions. </p>
+
+        <h3>Third-Party Websites, Advertisers, or Services</h3>
+        <p>Kitabe may contain links to third-party websites or services, for which Kitabe assumes no responsibility.
+
+            <br> <br>Users are encouraged to review the terms and policies of third-party websites before engaging with them.
+         </p>
+
+         <h3>Copyright Complaints</h3>
+        <p>Kitabe respects copyright laws and provides a mechanism for reporting copyright infringement.  </p>
+        </div>
+        
+      </section>
+        
+      <!--TERMS END HERE-->
+
+      <!--Contact starts here-->
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h2 section-title has-underline">
+            Write me anything
+            <span class="span has-before"></span>
+          </h2>
+
+          <div class="wrapper">
+
+            <form action="" class="contact-form">
+
+              <input type="text" name="name" placeholder="Your Name" required class="input-field">
+
+              <input type="email" name="email_address" placeholder="Your Email" required class="input-field">
+
+              <input type="text" name="subject" placeholder="Subject" required class="input-field">
+
+              <textarea name="message" placeholder="Your Message" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-primary">Send Now</button>
+
+            </form>
+
+            <ul class="contact-card">
+
+              <li>
+                <p class="card-title">Address:</p>
+
+                <address class="address">
+                  BHILWARA <br>
+                  RAJASTHAN (311001)
+                </address>
+              </li>
+
+              <li>
+                <p class="card-title">Phone:</p>
+
+                <a href="tel:7878777070" class="card-link">7878777700</a>
+              </li>
+
+              <li>
+                <p class="card-title">Email:</p>
+
+                <a href="mailto:help_kitabe@gmail.com" class="card-link">help_kitabe@gmail.com</a>
+              </li>
+
+              <li>
+                <p class="social-list-title h3">Connect book socials</p>
+
+                <ul class="social-list">
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+      <!--Contact ends here-->
+
+    </article>
+  </main>
+
+
+
+
+
+  <!--Footer starts here -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <a href="#" class="logo">Kitabe</a>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="{{ url_for("about") }}" class="footer-link">About us</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for("terms") }}" class="footer-link">Terms</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for("privacy") }}" class="footer-link">Privacy</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for("help") }}" class="footer-link">Help</a>
+          </li>
+
+          <li>
+            <a href="#Contact" class="footer-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 All right reserved. Made with ❤ by vidhi.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+  <!--Footer ends here -->
+
+
+
+
+
+  <!--custom script link -->
+  <script src="{{url_for('static', filename='js/script.js')}}" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>            

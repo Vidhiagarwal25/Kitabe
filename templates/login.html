@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login .css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+                <button type="button" id="forgotPasswordButton">Forgot Password</button>
+            </div>
+        </form>
+        <p id="errorText" class="error-message"></p>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <h3>Forgot Password</h3>
+            <p>Enter your email address to receive a verification code:</p>
+            <input type="email" id="forgotEmail" required>
+            <button id="sendCodeButton">Send Code</button>
+            <button id="cancelButton">Cancel</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
